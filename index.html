@@ -1,1 +1,335 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Green Street Records</title>
 
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #080b09;
+      color: white;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #101510;
+      padding: 25px 8%;
+      border-bottom: 2px solid #19d66b;
+      text-align: center;
+    }
+
+    header h1 {
+      color: #19d66b;
+      font-size: 38px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    header p {
+      color: #b8c5bb;
+      margin-top: 5px;
+    }
+
+    nav {
+      background: #0c110d;
+      padding: 15px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 12px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #19d66b;
+    }
+
+    section {
+      padding: 60px 8%;
+    }
+
+    .hero {
+      min-height: 75vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background:
+        linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.8)),
+        radial-gradient(circle at center, #164d2d, #080b09 65%);
+    }
+
+    .hero h2 {
+      font-size: 50px;
+      color: #19d66b;
+      text-transform: uppercase;
+    }
+
+    .hero p {
+      max-width: 700px;
+      margin: 20px auto;
+      font-size: 18px;
+      color: #d5ddd7;
+    }
+
+    .button {
+      display: inline-block;
+      background: #19d66b;
+      color: #061008;
+      padding: 12px 25px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 15px;
+    }
+
+    .button:hover {
+      background: #ffffff;
+    }
+
+    h2 {
+      color: #19d66b;
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 32px;
+      text-transform: uppercase;
+    }
+
+    .intro {
+      max-width: 850px;
+      margin: auto;
+      text-align: center;
+      color: #c4cec7;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 25px;
+      margin-top: 30px;
+    }
+
+    .card {
+      background: #121a14;
+      border: 1px solid #244b31;
+      border-radius: 10px;
+      padding: 25px;
+      text-align: center;
+    }
+
+    .card h3 {
+      color: #19d66b;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #c4cec7;
+    }
+
+    .price {
+      color: white;
+      font-size: 22px;
+      font-weight: bold;
+      margin-top: 15px;
+    }
+
+    .contact {
+      text-align: center;
+      background: #101510;
+    }
+
+    .contact a {
+      color: #19d66b;
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #050705;
+      color: #89968d;
+      border-top: 1px solid #244b31;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 27px;
+      }
+
+      .hero h2 {
+        font-size: 34px;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 5px 7px;
+        font-size: 14px;
+      }
+
+      section {
+        padding: 45px 6%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Green Street Records</h1>
+    <p>Sonido real. Cultura urbana. Voz del barrio.</p>
+  </header>
+
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#artistas">Artistas</a>
+    <a href="#albumes">Álbumes</a>
+    <a href="#instrumentales">Instrumentales</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <section class="hero" id="inicio">
+    <h2>Green Street Records</h2>
+    <p>
+      Un sello discográfico independiente dedicado a impulsar el talento
+      urbano, preservar la esencia del hip hop y darle voz a las nuevas
+      generaciones.
+    </p>
+    <a class="button" href="#artistas">Conoce nuestros artistas</a>
+  </section>
+
+  <section>
+    <h2>Nuestra misión</h2>
+    <p class="intro">
+      Conectar con las personas a través de la música, transmitir mensajes
+      reales, representar las historias del barrio y reestructurar las bases
+      callejeras y auténticas del hip hop.
+    </p>
+  </section>
+
+  <section id="artistas">
+    <h2>Nuestros artistas</h2>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Mhüs</h3>
+        <p>Gerente del sello y artista urbano.</p>
+      </div>
+
+      <div class="card">
+        <h3>Metamorfosis</h3>
+        <p>Artista perteneciente a Green Street Records.</p>
+      </div>
+
+      <div class="card">
+        <h3>Diy ionx</h3>
+        <p>Artista perteneciente a Green Street Records.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="albumes">
+    <h2>Álbumes en venta</h2>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Álbum de Mhüs</h3>
+        <p>Próximamente disponible.</p>
+        <div class="price">Consultar precio</div>
+        <a class="button" href="mailto:greenstreetcompany0410@gmail.com?subject=Compra de álbum de Mhüs">
+          Comprar
+        </a>
+      </div>
+
+      <div class="card">
+        <h3>Álbum de Metamorfosis</h3>
+        <p>Próximamente disponible.</p>
+        <div class="price">Consultar precio</div>
+        <a class="button" href="mailto:greenstreetcompany0410@gmail.com?subject=Compra de álbum de Metamorfosis">
+          Comprar
+        </a>
+      </div>
+
+      <div class="card">
+        <h3>Álbum de Diy ionx</h3>
+        <p>Próximamente disponible.</p>
+        <div class="price">Consultar precio</div>
+        <a class="button" href="mailto:greenstreetcompany0410@gmail.com?subject=Compra de álbum de Diy ionx">
+          Comprar
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="instrumentales">
+    <h2>Instrumentales y licencias</h2>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Beat urbano</h3>
+        <p>Instrumental para rap, trap y hip hop.</p>
+        <div class="price">Consultar precio</div>
+        <a class="button" href="mailto:greenstreetcompany0410@gmail.com?subject=Compra de instrumental urbano">
+          Solicitar
+        </a>
+      </div>
+
+      <div class="card">
+        <h3>Beat underground</h3>
+        <p>Sonido callejero y auténtico.</p>
+        <div class="price">Consultar precio</div>
+        <a class="button" href="mailto:greenstreetcompany0410@gmail.com?subject=Compra de instrumental underground">
+          Solicitar
+        </a>
+      </div>
+
+      <div class="card">
+        <h3>Licencia exclusiva</h3>
+        <p>Consulta disponibilidad y condiciones.</p>
+        <div class="price">Consultar precio</div>
+        <a class="button" href="mailto:greenstreetcompany0410@gmail.com?subject=Consulta de licencia exclusiva">
+          Consultar
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="contact">
+    <h2>Contacto</h2>
+
+    <p>
+      Correo:
+      <a href="mailto:greenstreetcompany0410@gmail.com">
+        greenstreetcompany0410@gmail.com
+      </a>
+    </p>
+
+    <p>
+      Instagram:
+      <a href="https://www.instagram.com/mhus_mc" target="_blank">
+        @mhus_mc
+      </a>
+    </p>
+  </section>
+
+  <footer>
+    © 2026 Green Street Records. Todos los derechos reservados.
+  </footer>
+
+</body>
+</html>
